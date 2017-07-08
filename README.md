@@ -18,7 +18,7 @@ Make sure pq and curl are running in a bash shell, e.g.
 3. Edit your ~/.bashrc or otherwise make sure the following variables are set prior to running the script:
 
 * ```export LASTFM_API_KEY="<your key>"```
-```export LASTFM_USER="<your username>"```
+* ```export LASTFM_USER="<your username>"```
 
 4. Source ~/.bashrc or otherwise make sure those variables are set!
 * ```. ~/.bashrc```
@@ -26,6 +26,6 @@ Make sure pq and curl are running in a bash shell, e.g.
 5. Clone this repo and run the script:
 
 * ```git clone git@github.com:/wordswords/currentlyplayinglastfm```
-```cd currentlyplayinglastfm```
-```./getstatus.sh```
+* ```cd currentlyplayinglastfm```
+* ```./getstatus.sh```
     
