@@ -13,19 +13,19 @@ You don't need to fill in the Callback URL field. Put application homepage as yo
 2. Install pq and curl
 
 Make sure pq and curl are running in a bash shell, e.g.
-*  ```sudo apt-get install pq curl```
+<pre>sudo apt-get install pq curl</pre>
 
 3. Edit your ~/.bashrc or otherwise make sure the following variables are set prior to running the script:
 
-* ```export LASTFM_API_KEY="<your key>"```
-* ```export LASTFM_USER="<your username>"```
+<pre>export LASTFM_API_KEY="<your key>"
+export LASTFM_USER="<your username>"</pre>
 
 4. Source ~/.bashrc or otherwise make sure those variables are set!
-* ```. ~/.bashrc```
+<pre>. ~/.bashrc</pre>
 
 5. Clone this repo and run the script:
 
-* ```git clone git@github.com:/wordswords/currentlyplayinglastfm```
-* ```cd currentlyplayinglastfm```
-* ```./getstatus.sh```
+<pre>git clone git@github.com:/wordswords/currentlyplayinglastfm
+cd currentlyplayinglastfm
+./getstatus.sh</pre>
     
