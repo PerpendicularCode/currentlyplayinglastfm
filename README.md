@@ -17,7 +17,7 @@ Make sure pq and curl are running in a bash shell, e.g.
 
 3. Edit your ~/.bashrc or otherwise make sure the following variables are set prior to running the script:
 
-<pre>export LASTFM_API_KEY="<your key>"
+<pre>export LASTFM_API_KEY="<your key you generated earlier>"
 export LASTFM_USER="<your username>"</pre>
 
 4. Source ~/.bashrc or otherwise make sure those variables are set!
