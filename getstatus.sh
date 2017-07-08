@@ -1,6 +1,6 @@
 old=""
 while true; do
-	response=`curl -s "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=davmonster&api_key=$LASTFM_API_KEY&format=json"` 
+	response=`curl -s "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=$LASTFM_USER&api_key=$LASTFM_API_KEY&format=json"` 
 	artist=`echo "$response" | jq ".[] | .track | .[0] | .artist " | tr -d "\#" | jq ".text"`
 	track=`echo "$response" | jq ".[] | .track | .[0] | .name"`
 	new="Currently playing: $artist : $track"
