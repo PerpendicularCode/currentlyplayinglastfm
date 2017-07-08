@@ -1,3 +1,7 @@
+#!/bin/bash
+
+## See https://github.com/wordswords/currentlyplayinglastfm for more information.
+
 old=""
 while true; do
 	response=`curl -s "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=$LASTFM_USER&api_key=$LASTFM_API_KEY&format=json"` 
