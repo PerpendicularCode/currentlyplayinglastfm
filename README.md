@@ -3,10 +3,9 @@ Bash script to show the currently playing track in a console terminal from last.
 
 This assumes you have already got a Last.FM account, and have setup Spotify and/or any other music player you are using to scrobble to Last.FM.
 
-## Get Last.FM API Key
+## Use
 
-1. Log in to Last.FM and go here:
-    https://www.last.fm/api/account/create
+1. Get Last.FM API Key. Log in to Last.FM and go here: https://www.last.fm/api/account/create
 
 You don't need to fill in the Callback URL field. Put application homepage as your website if you have one. Write down the API key that is generated.
 
