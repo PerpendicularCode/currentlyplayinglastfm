@@ -9,10 +9,10 @@ This assumes you have already got a Last.FM account, and have setup Spotify and/
 
 You don't need to fill in the Callback URL field. Put application homepage as your website if you have one. Write down the API key that is generated.
 
-2. Install pq and curl
+2. Install jq and curl
 
-Make sure pq and curl are running in a bash shell, e.g.
-<pre>sudo apt-get install pq curl</pre>
+Make sure jq and curl are running in a bash shell, e.g.
+<pre>sudo apt-get install jq curl</pre>
 
 3. Edit your ~/.bashrc or otherwise make sure the following variables are set prior to running the script:
 
