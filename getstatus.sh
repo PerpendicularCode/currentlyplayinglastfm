@@ -5,9 +5,9 @@
 old=""
 while true; do
 	response=`curl -s "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=$LASTFM_USER&api_key=$LASTFM_API_KEY&format=json"` 
-	artist=`echo "$response" | jq ".[] | .track | .[0] | .artist " | tr -d "\#" | jq ".text"`
-	track=`echo "$response" | jq ".[] | .track | .[0] | .name"`
-	album=`echo "$response" | jq ".[] | .track | .[0] | .album " | tr -d "\#" | jq ".text"`
+	artist=`echo "$response" | jq ".[] | .track | .[0] | .artist " | tr -d "\#" | jq ".text" | tr -d '"'`
+	track=`echo "$response" | jq ".[] | .track | .[0] | .name" | tr -d '"'`
+	album=`echo "$response" | jq ".[] | .track | .[0] | .album " | tr -d "\#" | jq ".text" | tr -d '"'`
 	new="--> $artist : $track ( $album )"
 	if [ "$old" != "$new" ]
 		then
